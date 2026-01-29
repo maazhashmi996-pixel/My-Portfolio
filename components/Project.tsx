@@ -20,21 +20,19 @@ const projects: Project[] = [
 
 export const Projects = () => {
     return (
-        <section className="py-24 px-6 max-w-7xl mx-auto">
-            {/* Header section inside Projects */}
+        <section className="py-24 px-6 max-w-7xl mx-auto bg-[#020205]">
             <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-4">
                 <div>
-                    <h2 className="text-indigo-500 font-mono text-xs mb-2 uppercase tracking-widest">
-                        Selected Works
+                    <h2 className="text-indigo-500 font-mono text-xs mb-2 uppercase tracking-widest italic">
+                        02 // Selected Works
                     </h2>
-                    <h3 className="text-5xl font-bold">Live Missions</h3>
+                    <h3 className="text-5xl font-bold text-white">Live Missions</h3>
                 </div>
-                <div className="text-gray-600 font-mono text-sm tracking-tighter italic">
+                <div className="text-gray-500 font-mono text-sm tracking-tighter italic">
                     Total Projects: {projects.length}
                 </div>
             </div>
 
-            {/* Projects Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 {projects.map((project, index) => (
                     <motion.a
@@ -42,23 +40,27 @@ export const Projects = () => {
                         key={project.id}
                         target="_blank"
                         rel="noopener noreferrer"
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: index * 0.1 }}
                         whileHover={{ y: -10 }}
-                        className="group relative block rounded-[2.5rem] bg-gradient-to-br from-white/[0.05] to-transparent border border-white/10 overflow-hidden backdrop-blur-md transition-all hover:border-indigo-500/40 shadow-2xl"
+                        className="group relative block rounded-[2.5rem] bg-white/[0.02] border border-white/10 overflow-hidden backdrop-blur-md transition-all hover:border-indigo-500/40 hover:bg-white/[0.04] shadow-2xl"
                     >
-                        <div className="p-12 h-full flex flex-col">
+                        {/* Glow effect on hover */}
+                        <div className="absolute -inset-1 bg-indigo-500/20 rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-500" />
+
+                        <div className="relative p-12 h-full flex flex-col bg-[#020205]/80">
                             <div className="flex justify-between items-start mb-12">
-                                <div className="w-12 h-12 bg-indigo-500/10 rounded-2xl flex items-center justify-center group-hover:bg-indigo-500 transition-colors">
+                                <div className="w-12 h-12 bg-indigo-500/10 rounded-2xl flex items-center justify-center group-hover:bg-indigo-600 transition-colors duration-500">
                                     <span className="text-xl group-hover:scale-125 transition-transform">🛰️</span>
                                 </div>
                                 <div className="text-[10px] font-mono text-indigo-400 border border-indigo-400/30 px-3 py-1 rounded-full uppercase tracking-tighter group-hover:bg-indigo-400 group-hover:text-black transition-all">
-                                    Launch Project
+                                    View Live
                                 </div>
                             </div>
 
-                            <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-indigo-300 transition-colors">
+                            <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-indigo-400 transition-colors">
                                 {project.title}
                             </h3>
                             <p className="text-gray-400 font-light mb-10 line-clamp-2 leading-relaxed">
@@ -69,7 +71,7 @@ export const Projects = () => {
                                 {project.tags.map((tag) => (
                                     <span
                                         key={tag}
-                                        className="text-[9px] py-1.5 px-4 rounded-full bg-white/5 border border-white/10 text-gray-400 font-mono group-hover:border-indigo-500/30"
+                                        className="text-[9px] py-1.5 px-4 rounded-full bg-white/5 border border-white/5 text-gray-500 font-mono group-hover:border-indigo-500/30 group-hover:text-indigo-300 transition-all"
                                     >
                                         {tag}
                                     </span>
