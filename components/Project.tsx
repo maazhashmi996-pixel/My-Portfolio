@@ -11,11 +11,12 @@ interface Project {
 }
 
 const projects: Project[] = [
-    { id: 1, title: "Gifted Wheels Driving School", description: "Full-scale store with Stripe and Auth.", tags: ["React", "Node.js", "MongoDB"], link: "https://giftedwheelsds.com/" },
-    { id: 2, title: "Hukam Express", description: "Interactive 3D viewer using Three.js.", tags: ["Three.js", "Next.js"], link: "https://hukamexpress.com/" },
-    { id: 3, title: "Lead-Managment-System", description: "Live data visualization with Socket.io.", tags: ["Express", "Chart.js"], link: "https://leads-management-system-next.vercel.app/" },
-    { id: 4, title: "Dawood Gee Astrologer", description: "Modern AI-integrated web application.", tags: ["Next.js", "Tailwind", "Cloudinary"], link: "https://dawoodgeedawood.com/" },
-    { id: 5, title: "Dib Education System", description: "Modern AI-integrated web application.", tags: ["Next.js", "Tailwind", "Cloudinary"], link: "https://dib.ac.pk/" },
+    { id: 1, title: "Gifted Wheels Driving School", description: "Driving Website build in Js", tags: ["React", "Node.js", "MongoDB"], link: "https://giftedwheelsds.com/" },
+    { id: 2, title: "Hukam Express", description: " Website With Dashboard.", tags: ["Three.js", "Next.js"], link: "https://hukamexpress.com/" },
+    { id: 3, title: "Lead-Managment-System", description: "Full Stack CRM", tags: ["Express", "Chart.js"], link: "https://leads-management-system-next.vercel.app/" },
+    { id: 4, title: "Ride To Mechanic", description: "E-Commerce Website With Dashboard.", tags: ["Next Js", "Chart.js"], link: "https://full-stack-project-sandy.vercel.app/" },
+    { id: 5, title: "Dawood Gee Astrologer", description: "Modern Website in Frontend + Backend", tags: ["Next.js", "Tailwind", "Cloudinary"], link: "https://dawoodgeedawood.com/" },
+    { id: 6, title: "Dib Education System", description: "Full Stack Project.", tags: ["Next.js", "Tailwind", "Cloudinary"], link: "https://dib.ac.pk/" },
 ];
 
 export const Projects = () => {
