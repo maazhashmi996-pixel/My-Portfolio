@@ -13,7 +13,7 @@ export const About = () => (
             <h2 className="text-indigo-500 font-mono text-sm mb-4 tracking-widest uppercase italic">01 // Origin</h2>
             <h3 className="text-5xl md:text-6xl font-bold mb-8 tracking-tight">Crafting Web <br /> <span className="text-indigo-600 italic">Universes.</span></h3>
             <p className="text-gray-400 text-xl leading-relaxed font-light">
-                I am Maaz Hashmi, a MERN specialist. I build high-performance web applications using <span className="text-white underline decoration-indigo-500">Next.js</span> and <span className="text-white">Three.js</span>.
+                I am Maaz Hashmi, a visionary Full-Stack Software Engineer dedicated to sculpting high-performance digital universes. Specializing in the MERN stack, I bridge the gap between complex backend architecture and immersive, 3D frontend experiences. With a track record of delivering scalable web solutions, I transform abstract concepts into seamless, production-ready realities that don't just function—they perform. <span className="text-white underline decoration-indigo-500">Next.js</span> and <span className="text-white">Three.js</span>.
             </p>
         </motion.div>
     </section>
