@@ -11,10 +11,10 @@ interface Project {
 }
 
 const projects: Project[] = [
-    { id: 1, title: "Gifted Wheels Driving School", description: "Driving Website build in Js", tags: ["React", "Node.js", "MongoDB"], link: "https://giftedwheelsds.com/" },
+    { id: 1, title: "Gifted Wheels Driving School", description: "Driving Website build in Js With Admin Dashboard", tags: ["React", "Node.js", "MongoDB"], link: "https://giftedwheelsds.com/" },
     { id: 2, title: "Hukam Express", description: " Website With Admin Dashboard.", tags: ["Three.js", "Next.js"], link: "https://hukamexpress.com/" },
     { id: 3, title: "Lead-Managment-System", description: "Full Stack CRM", tags: ["Express", "Chart.js"], link: "https://leads-management-system-next.vercel.app/" },
-    { id: 4, title: "Ride To Mechanic", description: "E-Commerce Website With .", tags: ["Next Js", "Chart.js"], link: "https://full-stack-project-sandy.vercel.app/" },
+    { id: 4, title: "Ride To Mechanic", description: "E-Commerce Website With Admin Dashboard .", tags: ["Next Js", "Chart.js"], link: "https://full-stack-project-sandy.vercel.app/" },
     { id: 5, title: "Dawood Gee Astrologer", description: "Modern Website in Frontend + Backend", tags: ["Next.js", "Tailwind", "Cloudinary"], link: "https://dawoodgeedawood.com/" },
     { id: 6, title: "Dib Education System", description: "Full Stack Project.", tags: ["Next.js", "Tailwind", "Cloudinary"], link: "https://dib.ac.pk/" },
 ];
